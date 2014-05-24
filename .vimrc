@@ -40,6 +40,7 @@ set expandtab
 "---
 " indent_guides
 "---
+
 let g:indent_guides_start_level=2
 let g:indent_guides_auto_colors=0
 let g:indent_guides_enable_on_vim_startup=0
@@ -53,8 +54,9 @@ au FileType coffee,ruby,javascript,python IndentGuidesEnable
 nmap <silent><Leader>ig <Plug>IndentGuidesToggle
 
 "---
-" template setting
+"template setting
 "---
+
 autocmd BufNewFile *.html 0r $HOME/.vim/template/template.html
 autocmd BufNewFile *.cpp 0r $HOME/.vim/template/template.cpp
 
